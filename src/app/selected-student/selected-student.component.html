@@ -1,3 +1,19 @@
-<p>
-  selected-student works!
-</p>
+<div class="row">
+    <div class="col-sm-6">
+        <!-- <img class="card-img-top" src="http://placehold.it/540x405" alt="Card image cap"> -->
+        <img class="card-img-top" src="../../assets/images/{{ selected.ulid + '.jpg'}}" alt="Card image cap">
+    </div>
+    <div class="col-sm-6">
+        <h2>{{ selected.name }}</h2>
+        <p>{{ selected.desc_long }}</p>
+        <ul>
+            <li><strong>Major: </strong>{{ selected.major }}</li>
+            <li><strong>Favorite Languages/Platforms: </strong>{{ selected.platform }}</li>
+            <li><strong>Hometown: </strong>{{ selected.hometown }}</li>
+            <li><strong>Hobbies: </strong>{{ selected.hobbies }}</li>
+            <li><strong>Inspirational Hero: </strong>{{ selected.inspiration }}</li>
+            <li><strong>Favorite Website: </strong><a href="{{ selected.website }}">{{ selected.website }}</a></li>
+            <li><strong>Previous School: </strong>{{ selected.school }}</li>
+        </ul>
+    </div>
+</div>
