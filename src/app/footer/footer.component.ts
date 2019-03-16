@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
   <div class="container">
       <p class="float-right"><a href="#">Back to top</a></p>
       <p>Created by Kevin Schaefer for IT354.</p>
-      <p>&copy; 2018 Illinois State University</p>
+      <p>&copy; 2019 Illinois State University</p>
   </div>
   </footer>
   `

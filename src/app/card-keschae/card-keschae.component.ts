@@ -14,7 +14,7 @@ export class CardKeschaeComponent implements OnInit {
   constructor() {
     this.me = {
       ulid: 'keschae',
-      name: 'Kevin Schaefer',
+      name: 'Calvin Schaefer',
       desc_short: 'Small business manager, web developer and university instructor',
       desc_long: 'Small business manager, web developer and university instructor. I never stop learning. \
       Always learning something new. I used to love playing music but I will be always a fan. \
