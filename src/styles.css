@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body {
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.card-wrapper {
+    padding-top: 2rem;
+}
+
+.separate-dark {
+    background: rgb(32, 36, 41);
+    color: white;
+}
+
+.about-section {
+    padding: 4rem;
+}
+
+.hobbies {
+    background: rgb(235, 213, 88);
+}
+
+.techexperience {
+    background: rgb(216, 198, 219);
+}
+
+.spacing {
+    padding: 4rem 0;
+}
+
+/* @media screen and ( min-width: 991px ) {
+    .about-section .row {
+        display: flex;
+        align-items: center;
+    }
+} */
