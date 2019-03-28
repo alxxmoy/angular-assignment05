@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter} from '@angular/core';
 
 import { Student } from '../student';
+import { Observable, Subject } from 'rxjs';
 
 @Component({
   selector: 'app-card-ldpigma',
@@ -29,5 +30,7 @@ export class CardLdpigmaComponent implements OnInit {
 
   ngOnInit() {
   }
+
+
 
 }
