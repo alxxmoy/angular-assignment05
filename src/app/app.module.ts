@@ -7,6 +7,7 @@ import { NavComponent } from './nav/nav.component';
 import { CardKeschaeComponent } from './card-keschae/card-keschae.component';
 import { SelectedStudentComponent } from './selected-student/selected-student.component';
 import { FooterComponent } from './footer/footer.component';
+import { CardLdpigmaComponent } from './card-ldpigma/card-ldpigma.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FooterComponent } from './footer/footer.component';
     NavComponent,
     CardKeschaeComponent,
     SelectedStudentComponent,
-    FooterComponent
+    FooterComponent,
+    CardLdpigmaComponent
   ],
   imports: [
     BrowserModule,
