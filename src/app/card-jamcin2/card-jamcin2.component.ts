@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Student } from '../student';
 
 @Component({
@@ -8,8 +8,18 @@ import { Student } from '../student';
 export class CardJamcin2Component implements OnInit {
 
   me: Student;
+  @Output() output: EventEmitter<Student> = new EventEmitter();
 
   constructor() {
+
+  }
+
+  sendClickedStudent() {
+    console.log('this is a test');
+    this.output.emit(this.me);
+  }
+
+  ngOnInit() {
     this.me = {
       ulid: 'jamcin2',
       name: 'Jason McIntire',
@@ -25,13 +35,6 @@ export class CardJamcin2Component implements OnInit {
       website: 'https://stackoverflow.com',
       school: 'Illinois State University'
     };
-  }
-
-  testClick() {
-    console.log('this is a test');
-  }
-
-  ngOnInit() {
   }
 
 }
