@@ -1,7 +1,5 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-
+import { Component, OnInit} from '@angular/core';
 import { Student } from '../student';
-import { CardLdpigmaComponent } from '../card-ldpigma/card-ldpigma.component';
 @Component({
   selector: 'app-selected-student',
   templateUrl: './selected-student.component.html',

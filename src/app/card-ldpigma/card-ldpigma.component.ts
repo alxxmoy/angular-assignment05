@@ -1,7 +1,7 @@
-import { Component, OnInit, EventEmitter} from '@angular/core';
+import { Component, OnInit, EventEmitter, Output} from '@angular/core';
 
 import { Student } from '../student';
-import { Observable, Subject } from 'rxjs';
+
 
 @Component({
   selector: 'app-card-ldpigma',
@@ -12,6 +12,9 @@ export class CardLdpigmaComponent implements OnInit {
 
   me: Student;
 
+ @Output() cardClick = new EventEmitter();
+
+
   constructor() {
     this.me = {
       ulid: 'ldpigma',
@@ -21,11 +24,16 @@ export class CardLdpigmaComponent implements OnInit {
       major: 'Information Systems - Web App Dev.',
       platform: 'html, css, js, Node.js, python, angular, 9 and 3/4',
       hometown: 'LaGrange, Illinois, USA',
-      hobbies: 'Percussion, music,, biking, snowboarding, coding',
+      hobbies: 'Percussion, music, biking, snowboarding, coding',
       inspiration: 'Barack Obama',
       website: 'https://www.linkedin.com/in/luke-pigman/',
       school: 'Illinois State University'
     };
+  }
+
+  sendClickedStudent() {
+    this.cardClick.emit(this.me);
+    console.log("Clicked student");
   }
 
   ngOnInit() {
