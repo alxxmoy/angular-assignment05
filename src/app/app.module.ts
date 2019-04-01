@@ -7,6 +7,7 @@ import { NavComponent } from './nav/nav.component';
 import { CardKeschaeComponent } from './card-keschae/card-keschae.component';
 import { SelectedStudentComponent } from './selected-student/selected-student.component';
 import { FooterComponent } from './footer/footer.component';
+import { CardJamcin2Component } from './card-jamcin2/card-jamcin2.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FooterComponent } from './footer/footer.component';
     NavComponent,
     CardKeschaeComponent,
     SelectedStudentComponent,
-    FooterComponent
+    FooterComponent,
+    CardJamcin2Component
   ],
   imports: [
     BrowserModule,
