@@ -33,7 +33,7 @@ export class CardLdpigmaComponent implements OnInit {
 
   sendClickedStudent() {
     this.cardClick.emit(this.me);
-    console.log("Clicked student");
+    console.log('Clicked student');
   }
 
   ngOnInit() {
