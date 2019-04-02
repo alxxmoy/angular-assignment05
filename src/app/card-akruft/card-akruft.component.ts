@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Output, EventEmitter, OnInit } from '@angular/core';
 
 import { Student } from '../student';
 
@@ -10,6 +10,8 @@ import { Student } from '../student';
 export class CardAkruftComponent implements OnInit {
 
   me: Student;
+
+  @Output() messageEvent = new EventEmitter<Student>();
 
   constructor() {
     this.me = {
@@ -30,6 +32,10 @@ export class CardAkruftComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  sendMessage(){
+    this.messageEvent.emit(this.me);
   }
 
 }
