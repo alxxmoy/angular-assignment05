@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { CardKeschaeComponent } from './card-keschae/card-keschae.component';
+import { CardAkruftComponent } from './card-akruft/card-akruft.component';
 import { SelectedStudentComponent } from './selected-student/selected-student.component';
 import { FooterComponent } from './footer/footer.component';
 
@@ -13,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
     AppComponent,
     NavComponent,
     CardKeschaeComponent,
+    CardAkruftComponent,
     SelectedStudentComponent,
     FooterComponent
   ],
