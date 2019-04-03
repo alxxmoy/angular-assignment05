@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { Student } from '../student';
 @Component({
+  // tslint:disable-next-line:component-selector
   selector: 'selected-student',
   templateUrl: './selected-student.component.html',
   styleUrls: ['./selected-student.component.css']
@@ -29,6 +30,15 @@ export class SelectedStudentComponent implements OnInit {
     };
 
   }
+
+  public get getSelected(): Student {
+    return this.selected;
+  }
+
+  public setSelected(select: Student) {
+    this.selected = select;
+  }
+
 
   ngOnInit() {
   }

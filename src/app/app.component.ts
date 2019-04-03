@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Student } from './student';
+import { SelectedStudentComponent } from './selected-student/selected-student.component';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,10 @@ import { Student } from './student';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  constructor() {
+  }
+
   title = 'IT 354 – Angular Assignment 05';
 
   clickedStudent: Student = {
@@ -22,6 +27,8 @@ export class AppComponent {
     website: '',
     school: ''
   };
+
+
 
   receiveClickedStudent(clickedStudent: Student) {
     this.clickedStudent = clickedStudent;
