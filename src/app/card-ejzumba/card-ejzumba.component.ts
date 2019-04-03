@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Student } from '../student'
+import { Student } from '../student';
 
 @Component({
     selector: 'app-card-ejzumba',
@@ -8,17 +8,17 @@ import { Student } from '../student'
     styleUrls: ['card-ejzumba.component.scss']
 })
 export class CardEjzumbaComponent implements OnInit{
-   
-  me: Student
+
+  me: Student;
 
     constructor() {
         this.me = {
           ulid: 'ejzumba',
           name: 'Eric Zumbahlen',
           desc_short: 'Father of 2, web developer, and eternal student',
-          desc_long: "I'm a former Air Force Seargent that now is a burgeoning developer. I interned \
+          desc_long: 'I\'m a former Air Force Seargent that now is a burgeoning developer. I interned \
           at State Farm over the summer and have accepted a full-time position there after graduation.\
-          In what little free time I Have I enjoy reading, tinkering, and watching movies.",
+          In what little free time I Have I enjoy reading, tinkering, and watching movies.',
           major: 'Information Systems Web Application Development',
           platform: 'JavaScript: Angular and JQuery \
           Java: Spring and JSF',
@@ -29,7 +29,7 @@ export class CardEjzumbaComponent implements OnInit{
           school: 'Illinois State University'
         };
       }
-    
+
       ngOnInit() {
       }
 
