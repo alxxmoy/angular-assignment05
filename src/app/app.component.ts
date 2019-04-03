@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Student } from './student';
 
 @Component({
@@ -9,7 +9,7 @@ import { Student } from './student';
 export class AppComponent {
   title = 'IT 354 – Angular Assignment 05';
 
-  clickedStudent: Student = {
+  @Input() clickedStudent: Student = {
     ulid: '',
     name: '',
     desc_short: '',
@@ -25,5 +25,6 @@ export class AppComponent {
 
   receiveClickedStudent(clickedStudent: Student) {
     this.clickedStudent = clickedStudent;
+    console.log(clickedStudent);
   }
 }
