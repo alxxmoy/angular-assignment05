@@ -2,14 +2,13 @@
 
     <div class="container"><br>
 
-        <selected-student></selected-student>
-        <!-- <selected-student [selected]="clickedStudent"></selected-student> -->
+        <selected-student [selected]="clickedStudent"></selected-student>
 
         <hr>
 
         <div class="row">
             <div class="col-md-4">
-               <app-card-ejzumba (click)="receiveClickedStudent($event)"></app-card-ejzumba>
+                <card-ejzumba (cardClick)="receiveClickedStudent($event)"></card-ejzumba>
             </div>
             <div class="col-md-4">
                 <card-keschae></card-keschae> <!-- take out and enable your card-->

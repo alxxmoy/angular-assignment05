@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { Student } from '../student';
 
 @Component({
-    selector: 'app-card-ejzumba',
+    //moduleId: module.id,
+    selector: 'card-ejzumba',
     templateUrl: 'card-ejzumba.component.html',
     styleUrls: ['card-ejzumba.component.scss']
 })
 export class CardEjzumbaComponent implements OnInit{
 
-  me: Student;
+    me: Student;
+    @Output() cardClick= new EventEmitter();
 
     constructor() {
         this.me = {
@@ -27,10 +28,15 @@ export class CardEjzumbaComponent implements OnInit{
           inspiration: 'Myself',
           website: 'https://www.udemy.com/spring-hibernate-tutorial/',
           school: 'Illinois State University'
-        };
+      };
+    }
+
+    sendClickedStudent() {
+        //console.log('Clicked card');
+        //console.log(this.me);
+        // use emit method here
+        this.cardClick.emit(this.me);
       }
 
-      ngOnInit() {
-      }
-
+    ngOnInit(){}
 }

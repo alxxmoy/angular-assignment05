@@ -14,7 +14,6 @@ import { FooterComponent } from './footer/footer.component';
 // import { CardKeschaeComponent } from './card-jamcin2/card-jamcin2.component';
 // import { CardKeschaeComponent } from './card-amoy/card-amoy.component';
 // import { CardKeschaeComponent } from './card-ldpigma/card-ldpigma.component';
-// import { CardKeschaeComponent } from './card-ejzuma/card-ejzumba.component';
 
 // should end up with 6 student component cards being imported here
 // and 6 more in NgModule

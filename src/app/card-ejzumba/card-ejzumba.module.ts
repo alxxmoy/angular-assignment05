@@ -6,7 +6,6 @@ import { CardEjzumbaComponent } from './card-ejzumba.component';
 
 @NgModule({
     imports: [
-        
     ],
     declarations: [
         CardEjzumbaComponent,

@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 import { Student } from '../student';
 @Component({
-  // tslint:disable-next-line:component-selector
   selector: 'selected-student',
   templateUrl: './selected-student.component.html',
   styleUrls: ['./selected-student.component.css']
 })
 export class SelectedStudentComponent implements OnInit {
 
-  selected: Student;
+  @Input() selected: Student;
 
   constructor() {
 
