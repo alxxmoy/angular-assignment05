@@ -13,8 +13,8 @@
                 <!-- <card-ejzumba (cardClick)="receiveClickedStudent($event)"></card-ejzumba> -->
             </div>
             <div class="col-md-4">
-                <card-keschae></card-keschae> <!-- take out and enable your card-->
-                <!-- <card-jfturle (cardClick)="receiveClickedStudent($event)"></card-jfturle> -->
+                <!-- <card-keschae></card-keschae> take out and enable your card-->
+                <card-jfturle (cardClick)="receiveClickedStudent($event)"></card-jfturle><!--  -->
             </div>
             <div class="col-md-4">
                 <card-keschae></card-keschae> <!-- take out and enable your card-->
@@ -41,7 +41,7 @@
             <div class="col-md-12">
                 <!-- the following card needs to receive clicked student that is emitted from card component-->
                 <card-keschae></card-keschae>
-                <!-- wrong way - <card-keschae (click)="setClickedStudent()"></card-keschae> -->            
+                <!-- wrong way - <card-keschae (click)="setClickedStudent()"></card-keschae> -->
             </div> <!-- column -->
         </div> <!-- row 3 of cards -->
 
@@ -49,4 +49,4 @@
 
     </div> <!-- container   -->
 
-<app-footer></app-footer>    
+<app-footer></app-footer>
