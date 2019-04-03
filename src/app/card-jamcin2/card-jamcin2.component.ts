@@ -1,22 +1,22 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+
 import { Student } from '../student';
 
 @Component({
-  selector: 'app-card-jamcin2',
+  selector: 'card-jamcin2',
   templateUrl: './card-jamcin2.component.html'
 })
 export class CardJamcin2Component implements OnInit {
 
   me: Student;
-  @Output() output: EventEmitter<Student> = new EventEmitter();
+  @Output() cardClick: EventEmitter<Student> = new EventEmitter();
 
   constructor() {
 
   }
 
   sendClickedStudent() {
-    console.log('this is a test');
-    this.output.emit(this.me);
+    this.cardClick.emit(this.me);
   }
 
   ngOnInit() {
