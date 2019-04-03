@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { Student } from '../student';
 @Component({
-  selector: 'app-selected-student',
+  selector: 'selected-student',
   templateUrl: './selected-student.component.html',
   styleUrls: ['./selected-student.component.css']
 })
@@ -11,6 +11,7 @@ export class SelectedStudentComponent implements OnInit {
   selected: Student;
 
   constructor() {
+
     this.selected = {
       ulid: 'keschae',
       name: 'Kevin Schaefer',
@@ -27,7 +28,8 @@ export class SelectedStudentComponent implements OnInit {
       school: 'Illinois Wesleyan University'
     };
 
-   }
+  }
+
   ngOnInit() {
   }
 
