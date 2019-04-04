@@ -3,7 +3,7 @@ import { Component, Output, EventEmitter, OnInit } from '@angular/core';
 import { Student } from '../student';
 
 @Component({
-  selector: 'app-card-akruft',
+  selector: 'card-akruft',
   templateUrl: './card-akruft.component.html',
   styleUrls: ['./card-akruft.component.css']
 })

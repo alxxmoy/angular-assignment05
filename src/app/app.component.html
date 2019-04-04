@@ -2,7 +2,7 @@
 
     <div class="container"><br>
 
-        <app-selected-student [selected]="selected"></app-selected-student>
+        <selected-student [selected]="clickedStudent"></selected-student>
         <hr>
         <div class="row">
             <div class="col-md-4">
@@ -12,7 +12,7 @@
             </div>
             <div class="col-md-4">
 
-                <app-card-akruft (messageEvent)= "receiveMessage($event)"></app-card-akruft>
+                <card-akruft (messageEvent)= "receiveClickedStudent($event)"></card-akruft>
 
             </div>
             <div class="col-md-4">

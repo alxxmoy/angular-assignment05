@@ -8,7 +8,7 @@ import { Student } from './student';
 })
 export class AppComponent {
   title = 'IT 354 – Angular Assignment';
-  selected: Student = {
+  clickedStudent: Student = {
     ulid: 'keschae',
     name: 'Kevin Schaefer',
     desc_short: 'Small business manager, web developer and university instructor',
@@ -23,7 +23,7 @@ export class AppComponent {
     website: 'https://www.sitepoint.com',
     school: 'Illinois Wesleyan University'
   };
-  receiveMessage($event) {
-    this.selected= $event
+  receiveClickedStudent($event) {
+    this.clickedStudent= $event
   }
 }
