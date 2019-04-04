@@ -2,78 +2,48 @@
 
     <div class="container"><br>
 
-        <selected-student [selected]="clickedStudent"></selected-student>
+        <selected-student [selected]="clickedStudent"></selected-student> 
+
         <hr>
         <div class="row">
             <div class="col-md-4">
-
-                <app-card-keschae></app-card-keschae>
-
+                <card-keschae></card-keschae> <!-- take out and enable your card-->
+                <!-- <card-ejzumba (cardClick)="receiveClickedStudent($event)"></card-ejzumba> -->
             </div>
             <div class="col-md-4">
-
-                <card-akruft (messageEvent)= "receiveClickedStudent($event)"></card-akruft>
-
+                <card-keschae></card-keschae> <!-- take out and enable your card-->
+                <!-- <card-jfturle (cardClick)="receiveClickedStudent($event)"></card-jfturle> -->
             </div>
             <div class="col-md-4">
-
-                    <div class="card border-secondary">
-                            <img class="card-img-top" src="http://placehold.it/360x270" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Joe Student</h5>
-                                <p class="card-text">I'm a passionate IT graduate student with an emphasis in web application development.</p>
-                                <a href="#" class="card-link">Favorite Development Website</a>
-                                <p class="card-text"><small class="text-muted">Updated September 12, 2018 12:15 PM</small></p>
-                            </div>
-                        </div>
-        
+                <card-akruft (messageEvent)="receiveClickedStudent($event)"></card-akruft>
             </div> <!-- column -->
-        </div> <!-- row -->
-        
+        </div> <!-- row 1 of cards -->
 
         <div class="row">
-                <div class="col-md-4">
-    
-                    <div class="card border-secondary">
-                        <img class="card-img-top" src="http://placehold.it/360x270" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Joe Student</h5>
-                            <p class="card-text">I'm a passionate IT graduate student with an emphasis in web application development.</p>
-                            <a href="#" class="card-link">Favorite Development Website</a>
-                            <p class="card-text"><small class="text-muted">Updated September 12, 2018 12:15 PM</small></p>
-                        </div>
-                    </div>
+            <div class="col-md-4">
+                <card-keschae></card-keschae> <!-- take out and enable your card-->
+                <!-- <card-amoy (cardClick)="receiveClickedStudent($event)"></card-amoy> -->
+            </div>
+            <div class="col-md-4">
+                <card-keschae></card-keschae> <!-- take out and enable your card-->
+                <!-- <card-jamcin2 (cardClick)="receiveClickedStudent($event)"></card-jamcin2>  -->
+            </div>
+            <div class="col-md-4">
+                <card-keschae></card-keschae> <!-- take out and enable your card-->
+                <!-- <card-ldpigma (cardClick)="receiveClickedStudent($event)"></card-ldpigma> -->
+            </div> <!-- column -->
+        </div> <!-- row 2 of cards -->
 
-                </div>
-                <div class="col-md-4">
-    
-                    <div class="card border-secondary">
-                        <img class="card-img-top" src="http://placehold.it/360x270" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Joe Student</h5>
-                            <p class="card-text">I'm a passionate IT graduate student with an emphasis in web application development.</p>
-                            <a href="#" class="card-link">Favorite Development Website</a>
-                            <p class="card-text"><small class="text-muted">Updated September 12, 2018 12:15 PM</small></p>
-                        </div>
-                    </div> 
-    
-                </div>
-                <div class="col-md-4">
-    
-                    <div class="card border-secondary">
-                        <img class="card-img-top" src="http://placehold.it/360x270" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Joe Student</h5>
-                            <p class="card-text">I'm a passionate IT graduate student with an emphasis in web application development.</p>
-                            <a href="#" class="card-link">Favorite Development Website</a>
-                            <p class="card-text"><small class="text-muted">Updated September 12, 2018 12:15 PM</small></p>
-                        </div>
-                    </div>
-    
-                </div> <!-- column -->
-            </div> <!-- row -->
+        <div class="row">
+            <div class="col-md-12">
+                <!-- the following card needs to receive clicked student that is emitted from card component-->
+                <card-keschae></card-keschae>
+                <!-- wrong way - <card-keschae (click)="setClickedStudent()"></card-keschae> -->            
+            </div> <!-- column -->
+        </div> <!-- row 3 of cards -->
+
         <br>
 
     </div> <!-- container   -->
 
-<app-footer></app-footer> 
+<app-footer></app-footer>    
