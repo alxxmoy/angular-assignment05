@@ -1,0 +1,11 @@
+<div class="card border-secondary" (click)="sendClickedStudent()">
+  <!-- <img class="card-img-top" src="http://placehold.it/360x270" alt="Card image cap"> -->
+  <!-- the next line should create the link with data binding -->
+  <img class="card-img-top" src="../../assets/images/{{ me.ulid + '.jpg'}}" alt="{{ me.name }}">
+  <div class="card-body">
+      <h5 class="card-title">{{ me.name }}</h5>
+      <p class="card-text">{{ me.desc_short }}</p>
+      <a href="#" class="card-link">{{ me.website }}</a>
+      <p class="card-text"><small class="text-muted">Updated April 3, 2019 12:15 PM</small></p>
+  </div>
+</div> 
