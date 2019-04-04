@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 import { Student } from '../student';
 
 @Component({
-  selector: 'app-card-keschae',
+  selector: 'card-keschae',
   templateUrl: './card-keschae.component.html',
   styleUrls: ['./card-keschae.component.css']
 })
 export class CardKeschaeComponent implements OnInit {
 
   me: Student;
+
+  // create var to hold EventEmitter object
+  @Output() cardClick = new EventEmitter();
 
   constructor() {
     this.me = {
@@ -27,6 +30,11 @@ export class CardKeschaeComponent implements OnInit {
       website: 'https://www.sitepoint.com',
       school: 'Illinois Wesleyan University'
     };
+  }
+
+  sendClickedStudent() {
+    console.log('Clicked card');
+    // use emit method here
   }
 
   ngOnInit() {
