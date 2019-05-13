@@ -10,8 +10,9 @@ import { SelectedStudentComponent } from './selected-student/selected-student.co
 import { FooterComponent } from './footer/footer.component';
 import { CardLdpigmaComponent } from './card-ldpigma/card-ldpigma.component';
 
+// import { CardKeschaeComponent } from './card-jfturle/card-jfturle.component';
+import { CardAkruftComponent } from './card-akruft/card-akruft.component';
 import { CardJfturleComponent } from './card-jfturle/card-jfturle.component';
-// import { CardKeschaeComponent } from './card-akruft/card-akruft.component';
 import { CardJamcin2Component } from './card-jamcin2/card-jamcin2.component';
 // import { CardKeschaeComponent } from './card-amoy/card-amoy.component';
 // import { CardKeschaeComponent } from './card-ldpigma/card-ldpigma.component';
@@ -26,6 +27,9 @@ import { CardJamcin2Component } from './card-jamcin2/card-jamcin2.component';
     NavComponent,
     SelectedStudentComponent,
     FooterComponent,
+    // CardJfturleComponent,
+    CardAkruftComponent,
+    // CardJamcin2Component,
     CardJfturleComponent,
     // CardAkruftComponent,
     CardJamcin2Component,

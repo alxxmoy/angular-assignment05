@@ -11,14 +11,12 @@
             </div>
             <div class="col-md-4">
                 
-                
                 <!-- <card-keschae></card-keschae> take out and enable your card-->
                 <card-jfturle (cardClick)="receiveClickedStudent($event)"></card-jfturle><!--  -->
             </div>
 
             <div class="col-md-4">
-  <app-card-ldpigma (cardClick)="receiveClickedStudent($event)"></app-card-ldpigma>
-                <!-- <card-akruft (cardClick)="receiveClickedStudent($event)"></card-akruft> -->
+                <card-akruft (messageEvent)="receiveClickedStudent($event)"></card-akruft>
             </div> <!-- column -->
         </div> <!-- row 1 of cards -->
 
@@ -30,9 +28,8 @@
             <div class="col-md-4">
                 <card-jamcin2 (cardClick)="receiveClickedStudent($event)"></card-jamcin2>
             </div>
-            <div class="col-md-4">
-                <card-keschae></card-keschae> <!-- take out and enable your card-->
-                <!-- <card-ldpigma (cardClick)="receiveClickedStudent($event)"></card-ldpigma> -->
+            <div class="col-md-4">            
+                <card-ldpigma (cardClick)="receiveClickedStudent($event)"></card-ldpigma> 
             </div> <!-- column -->
         </div> <!-- row 2 of cards -->
 

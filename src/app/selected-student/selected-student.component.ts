@@ -1,4 +1,3 @@
-
 import { Component, OnInit, Input } from '@angular/core';
 
 import { Student } from '../student';
@@ -12,6 +11,7 @@ import { Student } from '../student';
 export class SelectedStudentComponent implements OnInit {
 
 @Input() selected: Student;
+
 
   constructor() {
 
