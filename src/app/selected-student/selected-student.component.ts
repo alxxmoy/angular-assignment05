@@ -1,4 +1,5 @@
 import { Component, OnInit, Input} from '@angular/core';
+
 import { Student } from '../student';
 @Component({
   selector: 'selected-student',
@@ -9,7 +10,7 @@ import { Student } from '../student';
 
 export class SelectedStudentComponent implements OnInit {
 
- @Input() selected: Student;
+@Input() selected: Student;
 
   constructor() {
 
@@ -35,3 +36,4 @@ export class SelectedStudentComponent implements OnInit {
   }
 
 }
+
