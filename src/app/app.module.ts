@@ -8,10 +8,11 @@ import { CardKeschaeComponent } from './card-keschae/card-keschae.component';
 import { CardEjzumbaComponent } from './card-ejzumba/card-ejzumba.component';
 import { SelectedStudentComponent } from './selected-student/selected-student.component';
 import { FooterComponent } from './footer/footer.component';
+import { CardLdpigmaComponent } from './card-ldpigma/card-ldpigma.component';
 
-// import { CardKeschaeComponent } from './card-jfturle/card-jfturle.component';
+import { CardJfturleComponent } from './card-jfturle/card-jfturle.component';
 // import { CardKeschaeComponent } from './card-akruft/card-akruft.component';
-// import { CardKeschaeComponent } from './card-jamcin2/card-jamcin2.component';
+import { CardJamcin2Component } from './card-jamcin2/card-jamcin2.component';
 // import { CardKeschaeComponent } from './card-amoy/card-amoy.component';
 // import { CardKeschaeComponent } from './card-ldpigma/card-ldpigma.component';
 
@@ -25,12 +26,12 @@ import { FooterComponent } from './footer/footer.component';
     NavComponent,
     SelectedStudentComponent,
     FooterComponent,
-    // CardJfturleComponent,
+    CardJfturleComponent,
     // CardAkruftComponent,
-    // CardJamcin2Component,
+    CardJamcin2Component,
     // CardAmoyComponent,
-    // CardLdpigmaComponent,
     CardEjzumbaComponent,
+    CardLdpigmaComponent,
     CardKeschaeComponent
   ],
   imports: [

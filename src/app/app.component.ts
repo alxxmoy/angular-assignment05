@@ -31,9 +31,9 @@ export class AppComponent {
   };
 
 
-
   receiveClickedStudent(clickedStudent: Student) {
     this.clickedStudent = clickedStudent;
     console.log(clickedStudent);
   }
+
 }
