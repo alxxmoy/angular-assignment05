@@ -1,7 +1,9 @@
 export class Student {
     ulid: string;
     name: string;
+    // tslint:disable-next-line:variable-name
     desc_short: string;
+    // tslint:disable-next-line:variable-name
     desc_long: string;
     major: string;
     platform: string;
