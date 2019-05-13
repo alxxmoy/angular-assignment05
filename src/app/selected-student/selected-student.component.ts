@@ -1,4 +1,5 @@
-import { Component, OnInit, Input} from '@angular/core';
+
+import { Component, OnInit, Input } from '@angular/core';
 
 import { Student } from '../student';
 @Component({
@@ -31,6 +32,15 @@ export class SelectedStudentComponent implements OnInit {
     };
 
   }
+
+  public get getSelected(): Student {
+    return this.selected;
+  }
+
+  public setSelected(select: Student) {
+    this.selected = select;
+  }
+
 
   ngOnInit() {
   }

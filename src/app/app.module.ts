@@ -4,8 +4,9 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
-import { SelectedStudentComponent } from './selected-student/selected-student.component';
 import { CardKeschaeComponent } from './card-keschae/card-keschae.component';
+import { CardEjzumbaComponent } from './card-ejzumba/card-ejzumba.component';
+import { SelectedStudentComponent } from './selected-student/selected-student.component';
 import { FooterComponent } from './footer/footer.component';
 import { CardLdpigmaComponent } from './card-ldpigma/card-ldpigma.component';
 
@@ -14,7 +15,6 @@ import { CardJfturleComponent } from './card-jfturle/card-jfturle.component';
 import { CardJamcin2Component } from './card-jamcin2/card-jamcin2.component';
 // import { CardKeschaeComponent } from './card-amoy/card-amoy.component';
 // import { CardKeschaeComponent } from './card-ldpigma/card-ldpigma.component';
-// import { CardKeschaeComponent } from './card-ejzuma/card-ejzumba.component';
 
 // should end up with 6 student component cards being imported here
 // and 6 more in NgModule
@@ -30,8 +30,8 @@ import { CardJamcin2Component } from './card-jamcin2/card-jamcin2.component';
     // CardAkruftComponent,
     CardJamcin2Component,
     // CardAmoyComponent,
-     CardLdpigmaComponent,
-    // CardEjzumbaComponent,
+    CardEjzumbaComponent,
+    CardLdpigmaComponent,
     CardKeschaeComponent
   ],
   imports: [
@@ -42,4 +42,5 @@ import { CardJamcin2Component } from './card-jamcin2/card-jamcin2.component';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

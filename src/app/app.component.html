@@ -1,15 +1,13 @@
 <app-nav></app-nav>
 
     <div class="container"><br>
-   
+
         <selected-student [selected]="clickedStudent"></selected-student>
-    
-        <hr>
+            <hr>
 
         <div class="row">
             <div class="col-md-4">
-                <card-keschae></card-keschae> <!-- take out and enable your card-->
-                <!-- <card-ejzumba (cardClick)="receiveClickedStudent($event)"></card-ejzumba> -->
+                <card-ejzumba (cardClick)="receiveClickedStudent($event)"></card-ejzumba>
             </div>
             <div class="col-md-4">
                 
@@ -17,6 +15,7 @@
                 <!-- <card-keschae></card-keschae> take out and enable your card-->
                 <card-jfturle (cardClick)="receiveClickedStudent($event)"></card-jfturle><!--  -->
             </div>
+
             <div class="col-md-4">
   <app-card-ldpigma (cardClick)="receiveClickedStudent($event)"></app-card-ldpigma>
                 <!-- <card-akruft (cardClick)="receiveClickedStudent($event)"></card-akruft> -->
