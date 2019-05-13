@@ -35,6 +35,7 @@ export class CardKeschaeComponent implements OnInit {
   sendClickedStudent() {
     console.log('Clicked card');
     // use emit method here
+    this.cardClick.emit(this.me);
   }
 
   ngOnInit() {

@@ -6,9 +6,10 @@ import { Student } from '../student';
   templateUrl: './selected-student.component.html',
   styleUrls: ['./selected-student.component.css']
 })
+
+
 export class SelectedStudentComponent implements OnInit {
 
-  
   @Input() selected: Student;
 
   constructor() {
@@ -31,7 +32,17 @@ export class SelectedStudentComponent implements OnInit {
 
   }
 
+  public get getSelected(): Student {
+    return this.selected;
+  }
+
+  public setSelected(select: Student) {
+    this.selected = select;
+  }
+
+
   ngOnInit() {
   }
 
 }
+
