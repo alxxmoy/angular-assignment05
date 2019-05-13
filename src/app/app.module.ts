@@ -7,6 +7,7 @@ import { NavComponent } from './nav/nav.component';
 import { SelectedStudentComponent } from './selected-student/selected-student.component';
 import { CardKeschaeComponent } from './card-keschae/card-keschae.component';
 import { FooterComponent } from './footer/footer.component';
+import { CardLdpigmaComponent } from './card-ldpigma/card-ldpigma.component';
 
 import { CardJfturleComponent } from './card-jfturle/card-jfturle.component';
 // import { CardKeschaeComponent } from './card-akruft/card-akruft.component';
@@ -29,7 +30,7 @@ import { CardJamcin2Component } from './card-jamcin2/card-jamcin2.component';
     // CardAkruftComponent,
     CardJamcin2Component,
     // CardAmoyComponent,
-    // CardLdpigmaComponent,
+     CardLdpigmaComponent,
     // CardEjzumbaComponent,
     CardKeschaeComponent
   ],

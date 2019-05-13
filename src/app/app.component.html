@@ -1,8 +1,9 @@
 <app-nav></app-nav>
 
     <div class="container"><br>
-
-
+   
+        <selected-student [selected]="clickedStudent"></selected-student>
+    
         <hr>
 
         <div class="row">
@@ -11,11 +12,13 @@
                 <!-- <card-ejzumba (cardClick)="receiveClickedStudent($event)"></card-ejzumba> -->
             </div>
             <div class="col-md-4">
+                
+                
                 <!-- <card-keschae></card-keschae> take out and enable your card-->
                 <card-jfturle (cardClick)="receiveClickedStudent($event)"></card-jfturle><!--  -->
             </div>
             <div class="col-md-4">
-                <card-keschae></card-keschae> <!-- take out and enable your card-->
+  <app-card-ldpigma (cardClick)="receiveClickedStudent($event)"></app-card-ldpigma>
                 <!-- <card-akruft (cardClick)="receiveClickedStudent($event)"></card-akruft> -->
             </div> <!-- column -->
         </div> <!-- row 1 of cards -->
@@ -34,9 +37,10 @@
             </div> <!-- column -->
         </div> <!-- row 2 of cards -->
 
-        <div class="row">
-            <div class="col-md-12">
+        <!-- <div class="row"> -->
+            <!-- <div class="col-md-12"> -->
                 <!-- the following card needs to receive clicked student that is emitted from card component-->
+
                 <card-keschae></card-keschae>
                 <!-- wrong way - <card-keschae (click)="setClickedStudent()"></card-keschae> -->
             </div> <!-- column -->
